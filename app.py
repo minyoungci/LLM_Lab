@@ -10,4 +10,13 @@ from phi.utils.log import logger
 
 from assistant import get_llm_os  # type: ignore
 
-nest_asyncio.apply()
+nest_asyncio.apply() # asyncio의 이벤트 루프와 관련된 문제 방지를 위해 nest_asyncio 설정 적용. 주로 Streamlit과 같은 환경에서 비동기 코드 사용할 때 필요 
+
+
+st.set_page_config(
+    page_title="LLM OS",
+    page_icon="🤖",
+)
+st.title("LLM OS")
+st.markdown('#### : orange_heart: LLM OS is a lightweight, open-source, and privacy-focused AI assistant for your daily needs. :orange_heart:')
+
