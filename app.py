@@ -20,3 +20,6 @@ st.set_page_config(
 st.title("LLM OS")
 st.markdown('#### : orange_heart: LLM OS is a lightweight, open-source, and privacy-focused AI assistant for your daily needs. :orange_heart:')
 
+def main() -> None:
+
+    llm_id = st.sidebar.selectbox("Select LLM", options=["gpt-4o", "gpt-4-turbo"]) or "gpt-4o"
